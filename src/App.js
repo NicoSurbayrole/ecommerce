@@ -1,14 +1,14 @@
-import NavBar from './components/NavBar/NavBar';
-import ItemCounter from './components/itemCounter/ItemCounter';
-import './style/App.css';
+import NavBar from "./components/NavBar/NavBar";
+import ItemListContainer from "./components/itemListContainer/ItemListContainer";
+import "./style/App.css";
 
 function App() {
   return (
     <div>
-    <header>
-        <NavBar/>
-    </header>
-        <ItemCounter/>
+      <header>
+        <NavBar />
+      </header>
+      <ItemListContainer titulo={"BIENVENIDOS"} />
     </div>
   );
 }

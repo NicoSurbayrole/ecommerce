@@ -1,23 +1,11 @@
-import { useEffect, useState } from "react";
-import products from "../../productos.json"
 import ItemList from "../itemListContainer/ItemLis";
-import "./Items.css";
 import Spinner from 'react-bootstrap/Spinner';
+import { GetProducts } from "../SimpleProduct/hooks/GetProducts";
+import "./Items.css";
+
 
 const HomeItems = () => {
-    const [productos,setProducts] = useState([]);
-    
-    const getIteList = new Promise((res,rej) =>{
-        setTimeout(()=>{
-            res(products);
-        },2000);
-    });
-
-    useEffect(()=>{
-        getIteList.then((res) =>{
-            setProducts(res.productos)
-        })
-    });
+  const { productos } = GetProducts();
 
   return productos.length > 0 ? (
     <ItemList listaProductos={productos} />

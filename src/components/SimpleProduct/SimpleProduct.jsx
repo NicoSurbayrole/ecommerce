@@ -22,7 +22,7 @@ const SimpleProduct = () => {
     });
   });
 
-  const singleProduct = productos.filter((product) => product.productId == params);
+  const singleProduct = productos.filter((product) =>  product.productId === Number(params));
 
   return singleProduct.map(({ articulo, description, imgUrl, price }) => {
     return (

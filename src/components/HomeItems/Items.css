@@ -1,0 +1,31 @@
+.card{
+    width: 18rem !important;
+}
+
+.card-img-top{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.btn{
+    color: black;
+    border: 1px solid black !important;
+}
+
+.btn:hover{
+    color: black !important;
+    opacity: 0.5 !important;
+}
+.card{
+    display: inline-block;
+    margin-right: 4%;
+}
+
+.card-body{
+    text-align: center;
+}
+
+main{
+    padding-top: 3%;
+    margin-left: 4%;
+}

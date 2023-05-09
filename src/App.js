@@ -1,15 +1,23 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
-import ItemListContainer from "./components/itemListContainer/ItemListContainer";
-import "./style/App.css";
+import HomeItems from "./components/HomeItems/HomeItems";
+import SimpleProduct from "./components/SimpleProduct/SimpleProduct";
+
 
 function App() {
+
   return (
-    <div>
-      <header>
-        <NavBar />
-      </header>
-      <ItemListContainer titulo={"BIENVENIDOS"} />
-    </div>
+    <BrowserRouter>
+        <header>
+          <NavBar />
+        </header>
+        <main>
+          <Routes>
+            <Route path="/" element={<HomeItems />} />
+            <Route path="/item/:productId" element={<SimpleProduct/>}/>
+          </Routes>
+        </main>
+    </BrowserRouter>
   );
 }
 

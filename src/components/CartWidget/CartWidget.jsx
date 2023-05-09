@@ -6,18 +6,14 @@ import {
   DropdownToggle,
 } from "reactstrap";
 import { useState } from "react";
-const InicialState = 0;
+import {Cuenta} from './hooks/Count'
 
 const CartWidget = () => {
-  const [numeroInicial, setNumeroInicial] = useState(InicialState);
+const {numeroInicial,suma,resta,reset} = Cuenta()
   const [dropdown,setDropDown] = useState(false);
 
   const abrirCerrarDropdown = () => setDropDown(!dropdown);
-  const cuenta = (operacion) => {
-    if (operacion === "suma") setNumeroInicial(numeroInicial + 1);
-    else numeroInicial !== 0 ? setNumeroInicial(numeroInicial - 1) : alert("El contador no puede bajar de 0")
-  };
-  const resetear = () => setNumeroInicial(InicialState);
+
 
   return (
       <ul className="cart">
@@ -34,9 +30,9 @@ const CartWidget = () => {
               />
             </DropdownToggle>
             <DropdownMenu>
-              <DropdownItem onClick={() =>{cuenta("suma")}}>SUMAR</DropdownItem>
-              <DropdownItem onClick={cuenta}>RESTAR</DropdownItem>
-              <DropdownItem onClick={resetear}>RESETEAR</DropdownItem>
+              <DropdownItem onClick={suma}>SUMAR</DropdownItem>
+              <DropdownItem onClick={resta}>RESTAR</DropdownItem>
+              <DropdownItem onClick={reset}>RESETEAR</DropdownItem>
             </DropdownMenu>
           </Dropdown>
         </li>

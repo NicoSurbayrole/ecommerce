@@ -1,0 +1,39 @@
+{
+    "productos": [
+        {
+            "productId": 1,
+            "articulo": "zapatilla nike",
+            "description": "zapatillas de alta calidad",
+            "imgUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d0b94722-d603-4e66-829c-51f1801ec3fa/air-max-pulse-zapatillas-DtVTbL.png",
+            "price": 1500
+        },
+        {
+            "productId": 2,
+            "articulo": "zapatilla nike",
+            "description": "zapatillas de alta calidad",
+            "imgUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/89ff81a5-c881-4aa8-a4c0-8880583636ca/air-max-90-se-zapatillas-2Dd8X5.png",
+            "price": 1600
+        },
+        {
+            "productId": 3,
+            "articulo": "zapatilla nike",
+            "description": "zapatillas de alta calidad",
+            "imgUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/90af2c02-5d95-464a-92c7-4454350960d5/air-max-97-se-zapatillas-Cd8fsS.png",
+            "price": 1700
+        },
+        {
+            "productId": 4,
+            "articulo": "zapatilla nike",
+            "description": "zapatillas de alta calidad",
+            "imgUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2b292473-22d9-44ba-a567-5158185bdb18/air-max-90-zapatillas-kw0HCK.png",
+            "price": 1800
+        },
+        {
+            "productId": 5,
+            "articulo": "zapatilla nike",
+            "description": "zapatillas de alta calidad",
+            "imgUrl": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d0b94722-d603-4e66-829c-51f1801ec3fa/air-max-pulse-zapatillas-DtVTbL.png",
+            "price": 1900
+        }
+    ]
+}

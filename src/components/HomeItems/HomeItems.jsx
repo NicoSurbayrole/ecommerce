@@ -1,7 +1,7 @@
 import ItemList from "../itemListContainer/ItemLis";
 import Spinner from "react-bootstrap/Spinner";
 import { GetProducts } from "./hook/GetProducts";
-import "./Items.css";
+
 
 const HomeItems = () => {
   const { productos } = GetProducts();

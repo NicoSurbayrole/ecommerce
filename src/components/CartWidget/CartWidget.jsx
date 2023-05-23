@@ -22,7 +22,7 @@ const {numeroInicial,suma,resta,reset} = Cuenta()
         </li>
         <li className="logoCarrito">
           <Dropdown isOpen={dropdown} toggle={abrirCerrarDropdown}>
-            <DropdownToggle>
+            <DropdownToggle className="buttonCarrito">
               <img
                 className="carrito"
                 src="https://media.discordapp.net/attachments/968164817351352401/1019429148873199737/icons8-agregar-a-carrito-de-compras-100.png"
